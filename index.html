@@ -1,0 +1,22 @@
+<html>
+
+<head>
+	<title>Self isolated poll</title>
+</head>
+<body>
+<div id = "form" align="center">
+</div>
+
+<script>
+var d = new Date();
+var n = d.getMilliseconds();
+var form = '';
+if (n%2 === 0) {
+	form = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScel2qwnRSmOBci3K5mdL-KNbWzVQtqLA9GQF32QDNZwoQR4A/viewform?embedded=true" width="640" height="2850" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>';
+} else {
+	form = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOHhQVux6OsdjfHFqEOJvy5v5tUlJlnd8pQrc998gOKJsFLw/viewform?embedded=true" width="640" height="2448" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>';
+}
+document.getElementById('form').innerHTML = form;
+</script>
+</body>
+</html>
